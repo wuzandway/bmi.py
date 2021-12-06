@@ -1,11 +1,12 @@
 import streamlit as st
 def BMI(w, h):
     return w/(h*h)
+
 w =st.number_input('請輸入體重(KG)？')
 h =st.number_input('請輸入身高(M)？')
 
 comfilm_input=st.buttom("OK")
-if buttom:
+if comfilm_input:
     bmi = BMI(w, h)
     st.writ('BMI為', bmi)
     if (bmi < 18):
