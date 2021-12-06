@@ -6,7 +6,7 @@ speed= float(st.number_input('車速的資料收集:限速100 =>'))
 temp = float(st.number_input('溫度的資料收集:限溫30 =>'))
 轉速=int(st.number_input('轉速資料的收集:限轉12000 =>'))
 
-comfilm_input=st.buttom("OK")
+comfilm_input=st.button("OK")
 if comfilm_input:
     if gas <= car_simulation.get('gas_warning'):
         st.write('油箱只剩', gas, '格! 準備加油!!')
