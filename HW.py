@@ -8,19 +8,19 @@ temp = float(st.number_input('溫度的資料收集:限溫30 =>'))
 
 comfilm_input=st.buttom("OK")
 if comfilm_input:
- if gas <= car_simulation.get('gas_warning'):
-  st.write('油箱只剩', gas, '格! 準備加油!!')
- else:
-  st.write('油箱還剩', gas, '格。')
- if speed>=car_simulation.get('speed_limit'):
-  st.write('即將超速')
- else:
-  st.write('安全')
- if temp>=car_simulation.get('temp_warning'):
-  st.write('過熱')
- else:
-  st.write('正常')
- if 轉速>=car_simulation.get('轉速'):
-  st.write('即將超過轉速')
-else:
- st.write('正常')
+    if gas <= car_simulation.get('gas_warning'):
+        st.write('油箱只剩', gas, '格! 準備加油!!')
+    else:
+        st.write('油箱還剩', gas, '格。')
+    if speed>=car_simulation.get('speed_limit'):
+        st.write('即將超速')
+    else:
+        st.write('安全')
+    if temp>=car_simulation.get('temp_warning'):
+        st.write('過熱')
+    else:
+        st.write('正常')
+    if 轉速>=car_simulation.get('轉速'):
+        st.write('即將超過轉速')
+    else:
+        st.write('正常')
