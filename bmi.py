@@ -5,7 +5,7 @@ def BMI(w, h):
 w =st.number_input('請輸入體重(KG)？')
 h =st.number_input('請輸入身高(M)？')
 
-comfilm_input=st.buttom("OK")
+comfilm_input=st.comfilm_input("OK")
 if comfilm_input:
     bmi = BMI(w, h)
     st.writ('BMI為', bmi)
